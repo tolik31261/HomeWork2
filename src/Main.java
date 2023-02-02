@@ -5,6 +5,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
 
     }
 
@@ -65,6 +68,38 @@ public class Main {
         System.out.println(frog);
         frog = frog + 4;
         System.out.println(frog);
+
+    }
+    public static void task6(){
+        System.out.println("Задача 6");
+        var weightOneBoxer = 78.2;
+        var weightTwoBoxer = 82.7;
+        var generalWeight = weightOneBoxer + weightTwoBoxer;
+        System.out.println("Общий вес боксеров " + generalWeight + " кг");
+        var differnceWeight = weightTwoBoxer - weightOneBoxer;
+        System.out.println("Разница в весе боксеров " + differnceWeight + " кг");
+
+    }
+
+    public static void task7(){
+        System.out.println("Задача 7");
+        var weightOneBoxer = 78.2;
+        var weightTwoBoxer = 82.7;
+        var differenceWeight1 = weightTwoBoxer - weightOneBoxer;
+        System.out.println("Разница в весе боксеров " + differenceWeight1 + " кг (1 способ)");
+        var differenceWeight2 = weightTwoBoxer % weightOneBoxer;
+        System.out.println("Разница в весе боксеров " + differenceWeight2 + " кг (2 способ)");
+
+    }
+    public static void task8(){
+        System.out.println("Задача 8");
+        var workingTime = 640;
+        var manWorkingTime = 8;
+        var worker = workingTime / manWorkingTime;
+        System.out.println("Всего работников в компании " + worker + " человек");
+        worker = worker + 94;
+        manWorkingTime = workingTime / worker;
+        System.out.println("Если в компании работает " + worker + " человек, то всего " + manWorkingTime + " часа(ов) работы может быть поделено между сотрудниками");
 
     }
 
